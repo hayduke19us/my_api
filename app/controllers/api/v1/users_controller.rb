@@ -4,9 +4,11 @@ module API
       # GET /users
       # GET /users.json
       def index
-        @users = User.all
+        users = User.all
+        names = []
+        users.each {|n| names << n["name"] }
 
-        render json: @users
+        render json: names
       end
 
       # GET /users/1
