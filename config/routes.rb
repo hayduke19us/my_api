@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  namespace :api, defaults: {format: 'json'} do
+  namespace :api, path: "", contraints: {subdomain: "api" }, defaults: {format: "json"} do
     namespace :v1 do
       resources :users, except: [:new, :edit]
     end

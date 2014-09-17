@@ -1,0 +1,23 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ActiveSupport	test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c
+Api	app/controllers/api/v1/users_controller.rb	/^module Api$/;"	m
+Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:MyApi
+ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::API$/;"	c
+CreateUsers	db/migrate/20140917191514_create_users.rb	/^class CreateUsers < ActiveRecord::Migration$/;"	c
+MyApi	config/application.rb	/^module MyApi$/;"	m
+User	app/models/user.rb	/^class User < ActiveRecord::Base$/;"	c
+UserTest	test/models/user_test.rb	/^class UserTest < ActiveSupport::TestCase$/;"	c
+UsersController	app/controllers/api/v1/users_controller.rb	/^    class UsersController < ApplicationController$/;"	c	class:Api.V1
+UsersControllerTest	test/controllers/users_controller_test.rb	/^class UsersControllerTest < ActionController::TestCase$/;"	c
+V1	app/controllers/api/v1/users_controller.rb	/^  module V1$/;"	m	class:Api
+change	db/migrate/20140917191514_create_users.rb	/^  def change$/;"	f	class:CreateUsers
+create	app/controllers/api/v1/users_controller.rb	/^      def create$/;"	f	class:Api.V1.UsersController
+destroy	app/controllers/api/v1/users_controller.rb	/^      def destroy$/;"	f	class:Api.V1.UsersController
+index	app/controllers/api/v1/users_controller.rb	/^      def index$/;"	f	class:Api.V1.UsersController
+show	app/controllers/api/v1/users_controller.rb	/^      def show$/;"	f	class:Api.V1.UsersController
+update	app/controllers/api/v1/users_controller.rb	/^      def update$/;"	f	class:Api.V1.UsersController
