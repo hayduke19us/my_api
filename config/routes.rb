@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
-  namespace :api do 
+  namespace :api, defaults: {format: 'json'} do
     namespace :v1 do
       resources :users, except: [:new, :edit]
     end
   end
-
-  root 'users#index'
+  resources :users
+  root 'api/v1/users#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
